@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="za.co.topitupkeyboard.activity_admin">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:theme="@style/AppTheme.AppBarOverlay">
+            <include layout="@layout/layout_tiu_header" />
+
+        </android.support.design.widget.AppBarLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/layoutacc"
+
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="20dp">
+
+
+        <TextView
+            android:id="@+id/tv_account_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account Number"
+            android:textColor="#3c3c3c"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/txtAccountNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_account_number"
+            android:ems="10"
+            android:hint="Account Number" />
+
+
+        <TextView
+            android:id="@+id/tv_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtAccountNumber"
+            android:layout_marginTop="10dp"
+            android:text="Amount"
+            android:textColor="#3c3c3c"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/txtPaymentAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_value"
+            android:ems="10"
+            android:hint="0.00"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtPaymentAmount"
+            android:layout_marginTop="25dp"
+            android:padding="26dp"
+            android:text="Next" />
+
+
+        <TextView
+            android:id="@+id/tv_response"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_next"
+            android:gravity="center"
+            android:padding="25dp"
+            android:text="" />
+
+
+
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="245dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="5dp"
+        android:scrollbars="horizontal" />
+    <Button
+        android:id="@+id/btn_lookup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="85dp"
+        android:layout_marginBottom="40dp"
+        android:padding="26dp"
+        android:text="Bill Issuer Lookup" />
+
+    <android.support.design.widget.BottomNavigationView
+
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:itemBackground="@drawable/bottom_navigation_back_colors"
+        app:itemIconTint="@drawable/bottom_navigation_colors"
+        app:itemTextColor="@drawable/bottom_navigation_colors"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_navigation_back" />
+
+
+</FrameLayout>

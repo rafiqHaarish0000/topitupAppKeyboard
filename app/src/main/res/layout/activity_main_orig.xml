@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="20dp"
+    android:fitsSystemWindows="true">
+
+
+    <TextView
+        android:id="@+id/changingText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+
+        android:text="Nothing Yet." />
+
+
+    <TextView
+        android:id="@+id/printDetail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/changingText"
+        android:layout_marginTop="10dp"
+        android:text="" />
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_below="@+id/printDetail"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onclick_btn_radio"
+            android:layout_weight="1"
+            android:text="No Delay" />
+
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="onclick_btn_radio"
+            android:layout_weight="1"
+            android:text="5 Seconds" />
+
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onclick_btn_radio"
+            android:text="30 Seconds" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_startstop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup"
+        android:layout_marginTop="10dp"
+        android:onClick="onclick_btn_provider"
+        android:padding="@dimen/pad_30dp"
+        android:tag="startstop"
+        android:text="START" />
+
+
+    <TextView
+        android:id="@+id/txtBalance"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_startstop"
+        android:layout_marginTop="10dp"
+        android:text="Balance"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/btn_print"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_startstop"
+        android:layout_marginTop="50dp"
+        android:onClick="onclick_btn_provider"
+        android:padding="@dimen/pad_30dp"
+        android:tag="print"
+        android:text="PRINT SLIP" />
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/btn_print"
+        android:layout_centerHorizontal="true"
+        android:indeterminate="true"
+        android:paddingBottom="20dip"
+        android:progressDrawable="@drawable/circular_progress_bar"></ProgressBar>
+
+    <RelativeLayout
+        android:id="@+id/InnerRelativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+    <TextView
+        android:id="@+id/tv_check_connection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Connection establised !"
+        android:padding="25dp"
+        android:gravity="center"
+         />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

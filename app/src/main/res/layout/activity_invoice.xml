@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusableInTouchMode="true"
+    tools:context=".activity_reprint">
+
+    <include layout="@layout/layout_tiu_header" />
+
+    <TextView
+        android:id="@+id/txtStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="50dp"
+        android:drawablePadding="5dp"
+        android:text="Select Wallet"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <RadioGroup
+        android:id="@+id/grp_radio_wallet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/rdo_filter_wallet_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="All" />
+
+        <RadioButton
+            android:id="@+id/rdo_filter_wallet_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Standard" />
+
+        <RadioButton
+            android:id="@+id/rdo_filter_wallet_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Bill" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtStatus2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="100dp"
+        android:drawablePadding="5dp"
+        android:text="Select Financial Transaction"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <RadioGroup
+        android:id="@+id/grp_radio_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/rdo_filter_type_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+
+            android:text="All" />
+
+        <RadioButton
+            android:id="@+id/rdo_filter_type_2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:text="Payments" />
+
+        <RadioButton
+            android:id="@+id/rdo_filter_type_3"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:text="Bills" />
+
+        <RadioButton
+            android:id="@+id/rdo_filter_type_4"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Commissions" />
+
+      <!--  <RadioButton
+            android:id="@+id/rdo_filter_type_5"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Commissions" />-->
+    </RadioGroup>
+
+
+
+    <ListView
+        android:id="@+id/lst_reprint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rdo_filter_type_03"
+        android:layout_marginTop="50dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/grp_radio_wallet"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="193dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1c1c1c"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/btn_bottom_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_weight="1"
+            android:onClick="onclick_btn_action"
+            android:text="Close" />
+
+        <Button
+            android:id="@+id/btn_bottom_reprint_last"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_weight="1"
+            android:onClick="onclick_btn_action"
+            android:text="Reprint Last"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

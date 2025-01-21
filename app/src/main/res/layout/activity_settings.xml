@@ -1,0 +1,746 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    tools:context=".activity_reprint">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="371dp">
+
+        <include layout="@layout/nav_admin" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/gensettings"
+        android:padding="10dp"
+        android:orientation="vertical"
+        >
+
+
+    <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        android:visibility="gone"
+            android:text="General Settings" />
+
+        <TextView
+            android:paddingTop="10dp"
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Terminal Name" />
+
+        <EditText
+            android:id="@+id/txt_terminal_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Terminal Name"
+            android:inputType="text" />
+
+
+        <TextView
+            android:paddingTop="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  Show Financial Balance" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/chk_balance_login"
+
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:text="Login Screen" />
+            <CheckBox
+                android:id="@+id/chk_balance_admin"
+                android:layout_alignBaseline="@+id/chk_balance_login"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Admin" />
+
+            <CheckBox
+                android:id="@+id/chk_balance_cashier"
+                android:layout_alignBaseline="@+id/chk_balance_login"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:text="Cashier" />
+
+        </LinearLayout>
+
+
+
+
+
+
+
+        <CheckBox
+            android:id="@+id/chk_last_sale"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Show Last Sale on Login Screen" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+
+
+        </LinearLayout>
+        <CheckBox
+            android:layout_marginTop="10dp"
+            android:id="@+id/chk_time_out"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Auto Log Out after voucher sale." />
+
+
+
+
+        <RadioGroup
+            android:id="@+id/first_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/type1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="15 secs"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/type2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:text="30 secs" />
+
+            <RadioButton
+                android:id="@+id/type3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:text="1 min" />
+
+
+            <RadioButton
+                android:id="@+id/type4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:text="2 mins" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/second_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/first_group"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/type5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:text="5 mins" />
+
+            <RadioButton
+                android:id="@+id/type6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:text="10 mins" />
+
+            <RadioButton
+                android:id="@+id/type7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:text="30 mins" />
+
+            <RadioButton
+                android:id="@+id/type8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:text="Never" />
+        </RadioGroup>
+
+
+        <CheckBox
+            android:id="@+id/chk_disclaimer"
+            android:gravity="top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/disclaimer"
+            android:textColor="@color/colorPrimary" />
+
+
+
+
+        <!-- Text Label
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:id="@+id/spinnetxt"
+            android:text="on:"
+            android:layout_marginBottom="5dp"
+            />
+
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:prompt="@string/app_name"
+            android:entries="@array/timeout"
+            />
+
+-->
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/elesettings"
+            android:visibility="gone"
+            android:padding="10dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <CheckBox
+                    android:id="@+id/chk_max_vend_address"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Show Max Vend Amount with Address Lookup (As set by Top it Up)" />
+                <CheckBox
+                    android:id="@+id/chk_ele_warning"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Show Warning Message" />
+                <TextView
+                    android:paddingTop="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textSize="10dp"
+                    android:text="          (Confirmation Required, Retailer to Enter warning Threshold)" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/txt_amount_vend"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="R 0.00"
+                    android:inputType="text" />
+                <TextView
+                android:paddingTop="10dp"
+                android:id="@+id/textmaxvend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                    android:textColor="@color/green"
+                    android:textSize="10dp"
+                android:text="Current System Maximum Vend Amount" />
+            </LinearLayout>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/slipsettings"
+android:visibility="gone"
+        android:padding="10dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/chk_print_address"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Print Address on Airtime Slip" />
+            <CheckBox
+                android:id="@+id/chk_print_ele_copy"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Print Merchant Copy" />
+            <TextView
+                android:paddingTop="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                android:text="(Only For Airtime)" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/chk_print_to_screen"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Print to Screen" />
+
+
+        <CheckBox
+            android:layout_width="170dp"
+            android:id="@+id/chk_print_barcode"
+            android:layout_alignBaseline="@+id/chk_print_to_screen"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Print Barcodes" />
+
+
+        <Button
+            android:id="@+id/btn_ping_tools"
+            android:layout_width="151dp"
+            android:layout_height="wrap_content"
+            android:onClick="onclick_btn_action"
+            android:visibility="gone"
+            android:padding="20dp"></Button>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_blutooth"
+            android:layout_below="@id/chk_print_barcode"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:onClick="onclick_btn_action"
+            android:text="Pair Bluetooth printer" />
+        <Button
+            android:id="@+id/btn_blutooth_unpair"
+            android:layout_below="@id/chk_print_barcode"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:onClick="onclick_btn_action"
+            android:text="un pair" />
+
+
+
+        <Button
+            android:id="@+id/btn_wpos"
+            android:visibility="gone"
+            android:layout_below="@id/chk_print_barcode"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:onClick="onclick_btn_action"
+            android:text="WPOS Printer Test" />
+
+        <Button
+            android:id="@+id/btn_q1_test"
+            android:visibility="gone"
+            android:layout_below="@id/chk_print_barcode"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:onClick="onclick_btn_action"
+            android:text="Print Test Slip" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cashiersettings"
+            android:visibility="gone"
+            android:padding="10dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:paddingTop="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:text="Cashier general" />
+                <CheckBox
+                    android:id="@+id/chk_cashier_own_sales"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:checked="true"
+                    android:text="Only allowed to view their own sales" />
+                <CheckBox
+                    android:id="@+id/chk_disable_cashier_ele"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Disable Electricity for Cashier Only" />
+                <CheckBox
+                    android:id="@+id/chk_disable_cashier_bill"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Disable Bill payments for Cashier Only" />
+                <CheckBox
+                    android:id="@+id/chk_disable_cashier_sale_his"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Disable Sales History for Cashier Only" />
+                <CheckBox
+                    android:id="@+id/chk_allow_cashier_rep_ser"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Allow Cashier to Reprint from Serial" />
+                <TextView
+                android:paddingTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Allow to Reprint Last Voucher" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/chk_last_vou_admin"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Admin" />
+
+
+                <CheckBox
+                    android:layout_width="170dp"
+                    android:id="@+id/chk_last_vou_cashier"
+                    android:layout_alignBaseline="@+id/chk_last_vou_admin"
+                    android:layout_marginTop="4dp"
+                    android:layout_height="wrap_content"
+                    android:text="Cashier" />
+
+            </LinearLayout>
+            <TextView
+                android:paddingTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Allow Override Bill Payments Convenience Fee" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/chk_over_bill_pay_admin"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Admin" />
+
+
+                <CheckBox
+                    android:layout_width="170dp"
+                    android:id="@+id/chk_over_bill_pay_cashier"
+                    android:layout_alignBaseline="@+id/chk_over_bill_pay_admin"
+                    android:layout_marginTop="4dp"
+                    android:layout_height="wrap_content"
+                    android:text="Cashier" />
+
+            </LinearLayout>
+            <TextView
+                android:paddingTop="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                android:text="Cashier Cashup" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/chk_run_w_repo"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Allow Cashier run W Report" />
+
+
+                <CheckBox
+                    android:layout_width="170dp"
+                    android:id="@+id/chk_run_y_repo"
+                    android:layout_alignBaseline="@+id/chk_run_w_repo"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="Allow Cashier run Y Report" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/chk_run_y_his"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Allow Cashier to view Y History" />
+
+
+                <CheckBox
+                    android:layout_width="170dp"
+                    android:id="@+id/chk_all_y_repo"
+                    android:layout_alignBaseline="@+id/chk_run_y_his"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/red"
+                    android:layout_height="wrap_content"
+                    android:text="Show All Sales on Y Report" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mpossettings"
+            android:visibility="gone"
+            android:padding="10dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:paddingTop="10dp"
+                    android:id="@+id/textusergroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="User Group" />
+
+                <EditText
+                    android:id="@+id/mpos_user_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="User Group"
+                    android:inputType="number" />
+
+                <TextView
+                    android:paddingTop="10dp"
+                    android:id="@+id/textusername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="User Name" />
+
+                <EditText
+                    android:id="@+id/mpos_user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="User Name"
+                    android:inputType="text"/>
+                <TextView
+                    android:paddingTop="10dp"
+                    android:id="@+id/textpasswrd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Password" />
+
+                <EditText
+                    android:id="@+id/mpos_user_pwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Password"
+                    android:inputType="textPassword" />
+
+                <CheckBox
+                    android:id="@+id/chk_auto_mpos"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:checked="false"
+                    android:text="Auto Print MPOS Slip" />
+                <RadioGroup
+                    android:id="@+id/mposfirstgroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/mpostype1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Customer Only"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/mpostype2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+
+                        android:text="Merchant Only" />
+
+                    <RadioButton
+                        android:id="@+id/mpostype3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="Both" />
+
+
+
+                </RadioGroup>
+                <CheckBox
+                    android:id="@+id/chk_slip_cancel"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:checked="true"
+                    android:text="Print Slip for Canceled/Declined Txns." />
+                <CheckBox
+                    android:id="@+id/chk_slip_logout"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:checked="true"
+                    android:text="Logout After Card Sale" />
+                <ListView
+                    android:id="@+id/lst_pos_txn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mpostype3"
+                    android:layout_marginTop="20dp"
+                    android:paddingBottom="10dp"
+                  android:visibility="gone" />
+
+
+                <CheckBox
+                    android:id="@+id/chk_bypass_calculator"
+                    android:gravity="top"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:text="@string/mpos_bypass_calc"
+                    android:textColor="@color/colorPrimary" />
+
+
+
+                <CheckBox
+                    android:id="@+id/chk_mpos_disclaimer"
+                    android:gravity="top"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:text="@string/mpos_disclaimer"
+                    android:textColor="@color/colorPrimary" />
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_marginBottom="5dp"
+        >
+
+        <Button
+            android:id="@+id/btn_bottom_close"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onclick_btn_action"
+            android:text="Close"
+            android:layout_alignParentLeft="true"
+            />
+
+
+        <Button
+            android:id="@+id/btn_settings_save"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onclick_btn_action"
+            android:text="Save"
+            android:layout_alignParentLeft="true"
+            />
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

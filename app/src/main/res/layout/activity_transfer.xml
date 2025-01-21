@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    tools:context=".activity_reprint">
+
+    <include layout="@layout/layout_tiu_header" />
+
+
+    <RadioGroup
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="40dp"
+        android:id="@+id/grp_radio_layout"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:id="@+id/rdo_filter_type_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="Standard Wallet" />
+
+        <RadioButton
+            android:id="@+id/rdo_filter_type_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Additional Wallet" />
+
+    </RadioGroup>
+
+
+    <EditText
+        android:id="@+id/txt_account_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Store Account Number"
+        android:maxLength="6"
+        app:layout_constraintTop_toBottomOf="@+id/grp_radio_layout"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+
+        />
+
+
+    <EditText
+        android:id="@+id/txt_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Amount"
+        android:inputType="number"
+        android:maxLength="10"
+        app:layout_constraintTop_toBottomOf="@+id/txt_account_number"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+
+        />
+
+
+
+    <TextView
+        android:id="@+id/txt_total_available_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:text="Available funds to Transfer (Default Wallet): -"
+        app:layout_constraintTop_toBottomOf="@+id/txt_amount" />
+
+    <TextView
+        android:id="@+id/txt_total_available_cash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="Available funds to Transfer (Cash Wallet): -"
+        app:layout_constraintTop_toBottomOf="@+id/txt_total_available_default" />
+
+    <Button
+        android:id="@+id/btn_make_payment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:onClick="onclick_btn_action"
+        android:text="Make Payment"
+        app:layout_constraintTop_toBottomOf="@+id/txt_total_available_cash"
+        tools:layout_editor_absoluteX="15dp" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1c1c1c"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/btn_bottom_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_weight="1"
+            android:onClick="onclick_btn_action"
+            android:text="Close" />
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

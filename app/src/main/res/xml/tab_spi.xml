@@ -1,0 +1,26 @@
+<tabs>
+    <tab
+        id="@+id/spi_home"
+        icon="@drawable/ic_home2"
+        activeColor="@color/tab_select_txt"
+        inActiveColor="@color/tab_unselect_txt"
+        title="Back" />
+    <tab
+        id="@+id/spi_airtime"
+        icon="@drawable/ic_transactions"
+        activeColor="@color/tab_select_txt"
+        inActiveColor="@color/tab_unselect_txt"
+        title="Airtime" />
+    <tab
+        id="@+id/spi_data"
+        icon="@drawable/ic_transactions"
+        activeColor="@color/tab_select_txt"
+        inActiveColor="@color/tab_unselect_txt"
+        title="Data" />
+    <tab
+        id="@+id/spi_special"
+        icon="@drawable/ic_transactions"
+        activeColor="@color/tab_select_txt"
+        inActiveColor="@color/tab_unselect_txt"
+        title="Special" />
+</tabs>

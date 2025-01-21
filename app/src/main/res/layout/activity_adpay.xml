@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/lo_sale_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tv_sale_amount"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Sale Amount1"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_clear_sale_amount"
+            android:layout_width="27dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="55dp"
+            android:layout_toRightOf="@id/tv_sale_amount"
+            android:background="@drawable/button_border_six"
+            android:gravity="center"
+            android:text="C"
+            android:textColor="@drawable/state_color_two" />
+
+        <ImageView
+            android:id="@+id/img_cart"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/tv_clear_sale_amount"
+            android:src="@drawable/cart" />
+
+        <TextView
+            android:id="@+id/txt_sale_amount"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/img_cart"
+            android:background="@drawable/textbox_border"
+            android:cursorVisible="false"
+            android:hint=" R 0.00 "
+            android:textAlignment="textEnd"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"  />
+
+        <!--
+        <EditText
+            android:id="@+id/txt_sale_amount"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/img_cart"
+
+            android:background="@drawable/textbox_border"
+
+            android:cursorVisible="false"
+            android:hint=" R 0.00 "
+            android:textAlignment="textEnd"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+-->
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lo_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lo_sale_amount"
+        android:layout_marginHorizontal="10dp"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tv_tip"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Add Tip:"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_clear_tip"
+            android:layout_width="27dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="50dp"
+            android:layout_toRightOf="@id/tv_tip"
+            android:background="@drawable/button_border_six"
+            android:gravity="center"
+            android:text="C"
+            android:textColor="@drawable/state_color_two" />
+
+        <EditText
+            android:id="@+id/txt_perc_tip"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@+id/tv_clear_tip"
+            android:background="@drawable/textbox_border"
+            android:cursorVisible="false"
+            android:hint=" % "
+            android:padding="3dp"
+            android:textAlignment="textEnd"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/txt_rand_tip"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/txt_perc_tip"
+            android:background="@drawable/textbox_border"
+            android:cursorVisible="false"
+            android:hint=" R 0.00 "
+            android:padding="3dp"
+            android:textAlignment="textEnd"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lo_disc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lo_tip"
+        android:layout_marginHorizontal="10dp"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tv_disc"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Discount"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_clear_disc"
+            android:layout_width="27dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="50dp"
+            android:layout_toRightOf="@id/tv_disc"
+            android:background="@drawable/button_border_six"
+            android:gravity="center"
+            android:text="C"
+            android:textColor="@drawable/state_color_two" />
+
+        <EditText
+            android:id="@+id/txt_perc_disc"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@+id/tv_clear_disc"
+            android:background="@drawable/textbox_border"
+            android:cursorVisible="false"
+            android:hint=" % "
+            android:padding="3dp"
+            android:textAlignment="textEnd"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/txt_rand_disc"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/txt_perc_disc"
+            android:background="@drawable/textbox_border"
+            android:cursorVisible="false"
+            android:hint=" R 0.00 "
+            android:padding="3dp"
+            android:textAlignment="textEnd"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+    </RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/lo_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lo_disc"
+        android:layout_marginHorizontal="10dp"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tv_total"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Total"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/txt_total"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="143dp"
+            android:layout_toRightOf="@id/tv_total"
+            android:background="@drawable/textbox_border_two"
+            android:cursorVisible="false"
+            android:hint=" R 0.00 "
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/lo_notes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lo_total"
+        android:layout_marginHorizontal="10dp"
+        android:orientation="horizontal"
+        android:padding="3dp">
+
+        <EditText
+            android:id="@+id/txt_notes"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/textbox_border"
+            android:cursorVisible="false"
+            android:hint=" Add Notes "
+            android:padding="3dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lo_notes"
+        android:layout_centerInParent="true"
+        android:background="#C6C6C6"
+        android:gravity="center"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="5dp">
+
+        <LinearLayout
+            android:id="@+id/row1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_one"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_res_five"
+                android:fontFamily="sans-serif-black"
+                android:text="1"
+                android:textColor="@drawable/text_state_color"
+                android:textSize="@dimen/calcButtonTextSize" />
+
+            <Button
+                android:id="@+id/btn_two"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_res_five"
+                android:fontFamily="sans-serif-black"
+                android:text="2"
+                android:textColor="@drawable/text_state_color"
+                android:textSize="@dimen/calcButtonTextSize" />
+
+            <Button
+                android:id="@+id/btn_three"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_res_five"
+                android:fontFamily="sans-serif-black"
+                android:text="3"
+                android:textColor="@drawable/text_state_color"
+                android:textSize="@dimen/calcButtonTextSize" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row1"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_four"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_res_five"
+                android:fontFamily="sans-serif-black"
+                android:text="4"
+                android:textColor="@drawable/text_state_color"
+                android:textSize="@dimen/calcButtonTextSize" />
+
+            <Button
+                android:id="@+id/btn_five"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_res_five"
+                android:fontFamily="sans-serif-black"
+                android:text="5"
+                android:textColor="@drawable/text_state_color"
+                android:textSize="@dimen/calcButtonTextSize" />
+
+            <Button
+                android:id="@+id/btn_six"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_res_five"
+                android:fontFamily="sans-serif-black"
+                android:text="6"
+                android:textColor="@drawable/text_state_color"
+                android:textSize="@dimen/calcButtonTextSize" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row2"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_seven"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_res_five"
+                android:fontFamily="sans-serif-black"
+                android:text="7"
+                android:textColor="@drawable/text_state_color"
+                android:textSize="@dimen/calcButtonTextSize" />
+
+            <Button
+                android:id="@+id/btn_eight"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_res_five"
+                android:fontFamily="sans-serif-black"
+                android:text="8"
+                android:textColor="@drawable/text_state_color"
+                android:textSize="@dimen/calcButtonTextSize" />
+
+            <Button
+                android:id="@+id/btn_nine"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_res_five"
+                android:fontFamily="sans-serif-black"
+                android:text="9"
+                android:textColor="@drawable/text_state_color"
+                android:textSize="@dimen/calcButtonTextSize" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row3"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_clear"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_res_five"
+                android:drawableLeft="@drawable/ic_baseline_backspace_24"
+                android:fontFamily="sans-serif-black"
+                android:paddingLeft="40dp"
+                android:textColor="@drawable/text_state_color"
+                android:textSize="@dimen/calcButtonTextSize" />
+
+            <Button
+                android:id="@+id/btn_zero"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_res_five"
+                android:fontFamily="sans-serif-black"
+                android:text="0"
+                android:textColor="@drawable/text_state_color"
+                android:textSize="@dimen/calcButtonTextSize" />
+
+            <Button
+                android:id="@+id/btn_point"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_res_five"
+                android:fontFamily="sans-serif-black"
+                android:text="."
+                android:textColor="@drawable/text_state_color"
+                android:textSize="@dimen/calcButtonTextSize" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_border"
+            android:fontFamily="sans-serif-black"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textColor="@drawable/text_state_color"
+            android:textSize="15dp" />
+
+
+        <Button
+            android:id="@+id/btn_process"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_res_three"
+            android:fontFamily="sans-serif-black"
+            android:text="Proceed"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

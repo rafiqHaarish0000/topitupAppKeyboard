@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="za.co.topitupkeyboard.activity_admin">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <include layout="@layout/layout_tiu_header" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+
+
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+          >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtStatus"
+                android:src="@drawable/ic_visa_new"
+                android:contentDescription="VISA"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtStatus"
+                android:src="@drawable/ic_mastercard_new"
+                android:contentDescription="MASTERCARD"
+                />
+        </LinearLayout>
+    <include layout="@layout/content_main" android:visibility="gone"/>
+        <TextView
+            android:id="@+id/txtStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableRight="@drawable/card_pay"
+            android:textSize="24sp"
+            android:textColor="@color/blue"
+            android:drawablePadding="5dp"
+            android:maxLines="4"
+            android:text="Give us a \n call  for a \n Swipe Card \n device"/>
+
+</android.support.design.widget.CoordinatorLayout>
+    <TextView
+        android:id="@+id/textView2"
+        android:padding="10dp"
+android:visibility="gone"
+        android:layout_marginTop="515dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Due  to  security  reasons  we  are  unable  to  refund  vouchers. Please do not provide any of our staff with voucher PIN numbers." />
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:labelVisibilityMode="labeled"
+        app:itemBackground="@drawable/bottom_navigation_back_colors"
+        app:itemIconTint="@drawable/bottom_navigation_colors"
+        app:itemTextColor="@drawable/bottom_navigation_colors"
+        app:menu="@menu/bottom_navigation_spi" />
+
+</FrameLayout>

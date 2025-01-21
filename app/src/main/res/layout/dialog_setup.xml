@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginRight="15dp"
+    android:layout_marginLeft="15dp"
+    android:padding="15dp"
+    android:background="@color/gray_light">
+
+
+
+
+    <TextView
+        android:id="@+id/tv_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="License PIN"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#3c3c3c" />
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rdpserver"
+        android:textSize="16dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Server:"
+            />
+        <RadioButton android:id="@+id/radio_demo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:textColor="@color/blue"
+            android:text="Demo             "/>
+        <RadioButton android:id="@+id/radio_live"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/green"
+            android:text="Live"
+            />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="7dp"
+        android:text="Enter the device ID."
+        android:textColor="#6f6f6f" />
+
+    <EditText
+        android:id="@+id/tv_device_id"
+        android:layout_centerHorizontal="true"
+        android:background="#ffffff"
+        android:textColor="@color/black"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/thirty_dp"
+        android:gravity="center"
+        android:inputType="number|text"
+        android:maxLength="10"
+        android:foreground="@color/white"
+        android:textAlignment="center" />
+
+
+    <TextView
+        android:id="@+id/tv_please_enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="7dp"
+        android:text="Enter the licence PIN for this device."
+        android:textColor="#6f6f6f" />
+
+    <EditText
+        android:id="@+id/tv_cell_number"
+        android:layout_centerHorizontal="true"
+        android:background="#ffffff"
+        android:textColor="@color/black"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/thirty_dp"
+        android:gravity="center"
+        android:inputType="number|text"
+        android:maxLength="10"
+        android:foreground="@color/white"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/btnSaveNumber"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="Save License / PIN"
+        android:textSize="16dp" />
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+android:layout_gravity="center"
+    android:orientation="horizontal">
+    <Button
+        android:id="@+id/btnExit"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="Exit"
+        android:textSize="16dp" />
+
+
+    <!--
+    <Button
+        android:id="@+id/btnGetActive"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="Fetch Active License"
+        android:textSize="16dp" />
+        -->
+
+
+    <Button
+        android:layout_height="wrap_content" android:textSize="16dp" android:gravity="center"
+        style="@style/Widget.AppCompat.Button"
+        android:id="@+id/btnCancelJC"
+        android:layout_width="145dp"
+        android:text="Cancel"
+        android:layout_marginTop="25dp"
+        />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_daydream"
+            android:layout_width="92dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="25dp"
+            android:background="@color/red"
+            android:text="Daydream"
+            android:textColor="@color/white"
+
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/btnTimezone"
+            android:layout_width="92dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="25dp"
+            android:background="@color/red"
+
+            android:gravity="center"
+            android:text="Set TimeZone"
+            android:textColor="@color/white"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/btnKeyboard"
+            android:layout_width="92dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="25dp"
+            android:background="@color/red"
+            android:gravity="center"
+            android:text="TIU Keyboard"
+            android:textColor="@color/white"
+            android:textSize="10dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btnTIULocker"
+            android:layout_width="280dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="25dp"
+            android:background="@color/blue"
+            android:gravity="center"
+            android:text="TIU Locker"
+            android:textColor="@color/white"
+            android:textSize="10dp" />
+      <!--  <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Crash Me !"
+            android:onClick="crashMe"/>-->
+       </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

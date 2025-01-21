@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="za.co.topitupkeyboard.activity_admin">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <include layout="@layout/layout_tiu_header" />
+
+    </android.support.design.widget.AppBarLayout>
+    <include layout="@layout/content_main" />
+
+</android.support.design.widget.CoordinatorLayout>
+    <TextView
+        android:id="@+id/textView2"
+        android:padding="10dp"
+
+        android:layout_marginTop="515dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Due  to  security  reasons  we  are  unable  to  refund  vouchers. Please do not provide any of our staff with voucher PIN numbers." />
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:labelVisibilityMode="labeled"
+        app:itemBackground="@drawable/bottom_navigation_back_colors"
+        app:itemIconTint="@drawable/bottom_navigation_colors"
+        app:itemTextColor="@drawable/bottom_navigation_colors"
+        app:menu="@menu/bottom_navigation_spi" />
+
+</FrameLayout>

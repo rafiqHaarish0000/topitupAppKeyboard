@@ -1,0 +1,99 @@
+<!-- android:paddingTop="28dp" -->
+
+<LinearLayout
+    android:id="@+id/tiu_title_bar"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="#000"
+    android:layout_gravity="top"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/tiu_title_outlet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxLength="24"
+            android:text=""
+            android:textColor="#fff" />
+
+
+
+
+          <TextView
+              android:id="@+id/tiu_title_balance"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:gravity="center"
+              android:text=""
+              android:textColor="#fff" />
+
+          <TextView
+              android:id="@+id/tiu_title_balance_cash"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:text=""
+              android:gravity="center"
+              android:textColor="#fff" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+
+
+        <TextView
+            android:id="@+id/tiu_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:maxLength="24"
+            android:text=""
+            android:textColor="#fff" />
+        <TextView
+            android:id="@+id/tiu_batt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text=""
+            android:textColor="#fff" />
+      <!--  <ImageView
+            android:id="@+id/bat_logo"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:gravity="right"
+          android:src=""/>-->
+        <TextView
+            android:id="@+id/tiu_clock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text=""
+            android:textColor="#fff" />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

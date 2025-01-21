@@ -1,0 +1,175 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_tiu_header" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp">
+
+
+        <TextView
+            android:id="@+id/tv_account_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meter Number"
+            android:textColor="#3c3c3c"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/txtAccountNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_account_number"
+            android:ems="10"
+            android:hint="Meter Number"
+            android:text="" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_amount_wrapper"
+            android:layout_below="@+id/txtAccountNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Amount"
+                android:textColor="#3c3c3c"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtPaymentAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="0.00"
+                android:inputType="numberDecimal" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/decrease"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="decreaseInteger"
+                    android:layout_marginTop="5dp"
+                    android:text="-" />
+
+                <TextView
+                    android:id="@+id/voucher_qty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="16dp"
+                    android:text="1"
+                    android:textStyle="bold"
+                    android:textSize="40sp" />
+
+                <Button
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/increase"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="increaseInteger"
+                    android:text="+" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_amount_wrapper"
+            android:layout_marginTop="20dp"
+            android:padding="20dp"
+            android:text="Next" />
+
+
+        <TextView
+            android:id="@+id/tv_response"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_next"
+            android:gravity="center"
+            android:padding="25dp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/tv_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_next"
+            android:text=" Please ensure that all staff are trained &amp; comply with Municipality policies for vending Electricity:\n
+\n1. Can not overcharge for tokens
+\n2. No minumum vending amount
+\n3. Must vend Free Tokens Failure to comply will result in the Municipality deactivating Electricity vending permanently
+\n\nDue to security reasons we are unable to refund vouchers." />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/prov_12"
+            android:layout_width="100dp"
+            android:visibility="gone"
+            android:layout_height="100dp"
+            android:layout_below="@+id/tv_notice"
+            android:layout_marginLeft="@dimen/pad_5dp"
+            android:layout_marginTop="-1dp"
+            android:layout_weight="1"
+            android:onClick="onclick_btn_provider"
+            android:src="@drawable/prov12_small"
+            android:tag="prov_unipin" />
+
+
+        <Button
+
+
+            android:id="@+id/freetoken"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="2dp"
+            android:onClick="getfreetokens"
+            android:visibility="gone"
+            android:text="Get Free Tokens" />
+
+
+    </RelativeLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:itemBackground="@drawable/bottom_navigation_back_colors"
+        app:itemIconTint="@drawable/bottom_navigation_colors"
+        app:itemTextColor="@drawable/bottom_navigation_colors"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_navigation_back" >
+
+    </android.support.design.widget.BottomNavigationView>
+
+
+</FrameLayout>

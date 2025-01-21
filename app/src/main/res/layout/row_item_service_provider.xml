@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    card_view:cardPreventCornerOverlap="false"
+    android:layout_height="112dp"
+    android:layout_margin="@dimen/margin4"
+    card_view:cardCornerRadius="@dimen/margin4"
+    card_view:cardElevation="40dp">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="top">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+android:layout_marginTop="-35dp"
+            android:contentDescription="@null"
+            />
+<!--android:tint="@android:color/holo_red_light"-->
+        <customfonts.MyTextView_SFNS_Display
+            android:id="@+id/textDeno"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:drawablePadding="0dp"
+            android:layout_marginTop="-70dp"
+            android:layout_marginStart="64dp"
+
+            android:text=""
+            android:background="@color/red"
+            android:textSize="16dp"
+            android:layout_below="@+id/imageView" />
+           <customfonts.MyTextView_SFNS_Display
+                android:id="@+id/textViewcat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:textColor="@android:color/holo_red_light"
+                android:drawablePadding="0dp"
+                android:layout_marginTop="-60dp"
+                android:gravity="center"
+
+                android:text="Airtime"
+               android:visibility="gone"
+                android:textSize="16dp"
+                android:layout_below="@+id/imageView" /> <!-- -->
+
+
+        <customfonts.MyTextView_SFNS_Display
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:textColor="@android:color/primary_text_light"
+
+            android:drawablePadding="0dp"
+            android:layout_marginTop="-65dp"
+            android:gravity="center"
+            android:focusable="true"
+            android:textSize="18dp"
+            android:layout_below="@+id/textViewcat" />
+
+
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-35dp"
+            android:gravity="center"
+
+            android:layout_below="@+id/textView"
+            android:contentDescription="@null"
+            />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="grey_5">#f2f2f2</color>
+    <color name="grey_60">#666666</color>
+    <color name="blue_grey_400">#78909C</color>
+    <color name="grey_40">#999999</color>
+    <color name="indigo_500">#3F51B5</color>
+    <color name="grey_10">#e6e6e6</color>
+    <color name="red_300">#E57373</color>
+    <color name="grey_90">#263238</color>
+    <color name="red_400">#EF5350</color>
+    <color name="overlay_dark_10">#1A000000</color>
+ 
+    <color name="tab_select_txt">#484848</color>
+    <color name="tab_unselect_txt">#cecece</color>
+
+    <color name="colorPrimary">#bf2035</color>
+    <color name="colorPrimaryDark">#716f6d</color>
+    <color name="colorAccent">#e82741</color>
+    <color name="white">#ffffff</color>
+
+    <color name="Smooch_accent">#989898</color>
+    <color name="Smooch_accentDark">#989898</color>
+    <color name="Smooch_accentLight">#ec1f27</color>
+
+    <color name="Smooch_backgroundInput">#ffffff</color>
+    <color name="text_gray">#7b8994</color>
+    <color name="text_black">#484848</color>
+    <color name="trans_text_black">#222426</color>
+
+    <color name="Smooch_btnSendHollow">#c0c0c0</color>
+    <color name="Smooch_btnSendHollowBorder">#303030</color>
+
+    <color name="Smooch_header">#989898</color>
+
+    <color name="Smooch_messageDate">@color/Smooch_header</color>
+    <color name="Smooch_messageShadow">#7f999999</color>
+
+    <color name="Smooch_remoteMessageAuthor">@color/Smooch_header</color>
+    <color name="Smooch_remoteMessageBackground">#ffffff</color>
+    <color name="Smooch_remoteMessageBorder">#d9d9d9</color>
+    <color name="Smooch_remoteMessageText">#000000</color>
+
+    <color name="Smooch_userMessageBackground">@color/Smooch_accent</color>
+    <color name="Smooch_userMessageBorder">@color/Smooch_accentDark</color>
+    <color name="Smooch_userMessageFailedBackground">@color/Smooch_accentLight</color>
+    <color name="Smooch_userMessageText">#ffffff</color>
+
+
+    <color name="color_green">#14808d</color>
+    <color name="color_brown">#343838</color>
+    <color name="color_orange">#f38a32</color>
+    <color name="color_blue">#1479b7</color>
+    <color name="divider_grey">#e4e4e5</color>
+
+
+    <color name="keyboard_divider">#2c3e50</color>
+    <color name="keyboard_pressed">#95a5a6</color>
+    <color name="keyboard_background_color">#34495e</color>
+
+
+    <array name="rect_color">
+        <item>@color/color_blue</item>
+        <item>@color/color_brown</item>
+        <item>@color/color_green</item>
+        <item>@color/divider_grey</item>
+        <item>@color/color_orange</item>
+    </array>
+
+
+    <color name="blue">#992173B9</color>
+
+    <color name="white_smoke">#F7F7F7</color>
+    <color name="white_smoke_dk">#f3f2f2</color>
+    <color name="black">#000000</color>
+    <color name="red">#ec1f27</color>
+    <color name="green">#008156</color>
+
+    <color name="red_actionbar">#CA2230</color>
+    <color name="red_title">#440d12</color>
+
+
+    <color name="transparent">#00000000</color>
+    <color name="main_color_gray_lt">#e5e5e5</color>
+    <color name="main_color_orange">#ff5e3a</color>
+    <color name="main_color_gray_dk">#333333</color>
+    <color name="main_color_gray">#dadada</color>
+    <color name="main_color_gray1">#8d8d8d</color>
+    <color name="blue_lt">#00b0f1</color>
+    <color name="gray_light">#ebebeb</color>
+
+
+
+    <color name="smog">#ff464D5C</color>
+    <color name="android_robot">#f8c645</color>
+    <color name="pastel_green">#ffafaaab</color>
+    <color name="decay">#ffd1cecb</color>
+
+    <color name="swarm_text_color_secondary">#ff646464</color>
+
+    <color name="jc1">#4a7384</color>
+    <color name="jc2">#7b898e</color>
+    <color name="jc3">#a8829f</color>
+    <color name="jc4">#356e35</color>
+    <color name="jc5">#496949</color>
+    <color name="jc6">#c79121</color>
+    <color name="jc7">#a8829f</color>
+
+
+    <color name="list_divider">#dedede</color>
+    <color name="bg_bubble_self">#E1E1E1</color>
+
+
+    <color name="android_app_upd_window_background_color">#FFFFFFFF</color>
+    <color name="android_app_upd_title_bar_color">#FF3F51B5</color>
+    <color name="android_app_upd_info_txt_color">#FF3F51B5</color>
+
+    <color name="android_app_upd_restricter_dlg_btn_pressed_color">#a33F51B5</color>
+    <color name="android_app_upd_restricter_dlg_btn_dark_state_color">#ff3F51B5</color>
+    <color name="android_app_upd_restricter_dlg_btn_light_state_color">#ffffffff</color>
+
+    <color name="android_app_upd_upd_dlg_btn_text_color">#ffFF4081</color>
+
+
+</resources>

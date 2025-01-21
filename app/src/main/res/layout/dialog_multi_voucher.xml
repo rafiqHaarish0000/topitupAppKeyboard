@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#263238"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minHeight="120dp"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+
+        >
+
+        <TextView
+            android:id="@+id/pop_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Quantity"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+            android:layout_height="match_parent" />
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="65dp"
+                    android:tag="2"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:textSize="25sp"
+                    android:layout_margin="5dp"
+                    android:textAlignment="center"
+                    android:background="@drawable/btn_spi_multi"
+                    android:onClick="click_spi_multi"
+                    android:gravity="center"
+                    android:text="2" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="65dp"
+                    android:tag="3"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:textSize="25sp"
+                    android:textAlignment="center"
+                    android:background="@drawable/btn_spi_multi"
+                    android:onClick="click_spi_multi"
+                    android:gravity="center"
+                    android:text="3" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="65dp"
+                    android:tag="4"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:textSize="25sp"
+                    android:layout_margin="5dp"
+                    android:textAlignment="center"
+                    android:background="@drawable/btn_spi_multi"
+                    android:onClick="click_spi_multi"
+                    android:gravity="center"
+                    android:text="4" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="65dp"
+                    android:tag="5"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:textSize="25sp"
+                    android:textAlignment="center"
+                    android:background="@drawable/btn_spi_multi"
+                    android:onClick="click_spi_multi"
+                    android:gravity="center"
+                    android:text="5" />
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="65dp"
+                    android:tag="6"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:textSize="25sp"
+                    android:layout_margin="5dp"
+                    android:textAlignment="center"
+                    android:background="@drawable/btn_spi_multi"
+                    android:onClick="click_spi_multi"
+                    android:gravity="center"
+                    android:text="6" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="65dp"
+                    android:tag="7"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:textSize="25sp"
+                    android:textAlignment="center"
+                    android:background="@drawable/btn_spi_multi"
+                    android:onClick="click_spi_multi"
+                    android:gravity="center"
+                    android:text="7" />
+
+            </TableRow>
+
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="65dp"
+                    android:tag="8"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:textSize="25sp"
+                    android:layout_margin="5dp"
+                    android:textAlignment="center"
+                    android:background="@drawable/btn_spi_multi"
+                    android:onClick="click_spi_multi"
+                    android:gravity="center"
+                    android:text="8" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="65dp"
+                    android:tag="9"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:textSize="25sp"
+                    android:textAlignment="center"
+                    android:background="@drawable/btn_spi_multi"
+                    android:onClick="click_spi_multi"
+                    android:gravity="center"
+                    android:text="9" />
+
+            </TableRow>
+
+        </TableLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+            >
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/bt_close"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:textSize="15sp"
+                android:background="@drawable/btn_rounded_red"
+                android:layout_alignParentLeft="true"
+                android:text="CANCEL"
+                android:textColor="@android:color/white" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/bt_process"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="140dp"
+                android:layout_height="60dp"
+                android:textSize="15sp"
+                android:background="@drawable/btn_rounded_green"
+                android:layout_alignParentRight="true"
+                android:text="PROCESS"
+                android:textColor="@android:color/white" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/txt_last_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:paddingTop="15dp"
+                android:id="@+id/txt_last_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#ffffff" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="30dp">
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/bt_reprint"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/btn_rounded_red"
+
+                    android:text="REPRINT"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txt_last_voucher_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="115dp"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textColor="#ffffff" />
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

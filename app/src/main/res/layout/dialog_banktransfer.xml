@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#263238"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minHeight="120dp"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:id="@+id/pop_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirmation"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+        <customfonts.MyTextView_Roboto_Medium
+            android:id="@+id/country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vw_hor"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:paddingRight="20dp"
+            android:text="Transfer to Bank Account"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+
+        <View
+            android:layout_width="320dp"
+            android:id="@+id/vw_hor"
+            android:layout_height="2dp"
+            android:background="#FFFFFF"
+            android:layout_below="@+id/pop_title"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"/>
+
+
+
+        <customfonts.MyTextView_Roboto_Medium
+            android:id="@+id/payamount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/country"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="Paying Amount "
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+
+        <customfonts.MyTextView_Roboto_Medium
+            android:id="@+id/bankdetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/payamount"
+            android:gravity="left"
+            android:layout_marginTop="10dp"
+            android:text="bank details"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#ffffff"
+            android:textSize="14dp" />
+
+        <CheckBox
+            android:id="@+id/chk_acc_bank_cinfirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:buttonTint="@color/Smooch_backgroundInput"
+            android:gravity="center"
+            android:text="Confirm Above Bank Details are Correct"
+            android:textColor="#ffffff"
+            app:layout_constraintTop_toBottomOf="@+id/bankdetails" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+android:layout_marginTop="50dp"
+            android:orientation="horizontal"
+            >
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/bt_close"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="140dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/btn_rounded_red"
+                android:text="CANCEL"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/bt_process_fin"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="140dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/btn_rounded_green"
+                android:text="TRANSFER"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/txt_last_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:paddingTop="15dp"
+                android:id="@+id/txt_last_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#ffffff" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
