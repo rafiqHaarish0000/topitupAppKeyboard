@@ -86,4 +86,9 @@
     <style name="bottom_navigation.Active" parent="@style/TextAppearance.AppCompat.Caption">
         <item name="android:textSize">12sp</item>
     </style>
+
+    <style name="KeyboardTheme" parent="Theme.AppCompat.Light">
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:imeFullscreenBackground">@null</item>
+    </style>
 </resources>

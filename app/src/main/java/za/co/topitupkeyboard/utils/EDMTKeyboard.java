@@ -1,6 +1,7 @@
 package za.co.topitupkeyboard.utils;
 
 import android.content.SharedPreferences;
+import android.content.res.Configuration;
 import android.inputmethodservice.InputMethodService;
 import android.inputmethodservice.Keyboard;
 import android.inputmethodservice.KeyboardView;
@@ -40,7 +41,10 @@ public class EDMTKeyboard extends InputMethodService implements KeyboardView.OnK
 
     }
 
-
+    @Override
+    public boolean onEvaluateFullscreenMode() {
+        return false;
+    }
 
     @Override
     public void onKey(int i, int[] ints) {
@@ -153,6 +157,7 @@ public class EDMTKeyboard extends InputMethodService implements KeyboardView.OnK
     public void swipeUp() {
 
     }
+
 
 
 }

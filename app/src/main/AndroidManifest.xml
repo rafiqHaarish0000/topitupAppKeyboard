@@ -114,6 +114,7 @@
             android:name="za.co.topitupkeyboard.utils.EDMTKeyboard"
             android:exported="true"
             android:label="TIUKeyboard"
+            android:configChanges="orientation|screenSize|keyboardHidden"
             android:permission="android.permission.BIND_INPUT_METHOD">
             <intent-filter>
                 <action android:name="android.view.InputMethod" />
@@ -121,6 +122,9 @@
             <meta-data
                 android:name="android.view.im"
                 android:resource="@xml/method" />
+            <meta-data
+                android:name="android:theme"
+                android:resource="@style/KeyboardTheme" />
         </service>
     </application>
 

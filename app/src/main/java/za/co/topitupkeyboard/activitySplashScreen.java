@@ -102,11 +102,11 @@ String enable_vas;
 
                 @Override
                 public void run() {
-                    Intent i = new Intent(activitySplashScreen.this, activity_login.class);
-                    i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                    startActivity(i);
-                    finish();
-                   overridePendingTransition(0, R.anim.splashfadeout2);
+//                    Intent i = new Intent(activitySplashScreen.this, activity_login.class);
+//                    i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+//                    startActivity(i);
+//                    finish();
+//                   overridePendingTransition(0, R.anim.splashfadeout2);
                 }
             }, SPLASH_TIME_OUT);
 
