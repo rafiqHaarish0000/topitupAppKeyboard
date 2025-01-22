@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:keyPreviewOffset="12dp"
-    android:keyTextSize="@dimen/txt_18sp"
+    android:keyTextSize="24sp"
     android:layout_gravity="bottom"
     android:keyTextColor="@android:color/white"
     android:keyBackground="@drawable/key_background"

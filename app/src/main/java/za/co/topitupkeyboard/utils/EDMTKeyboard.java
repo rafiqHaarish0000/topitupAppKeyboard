@@ -6,8 +6,10 @@ import android.inputmethodservice.InputMethodService;
 import android.inputmethodservice.Keyboard;
 import android.inputmethodservice.KeyboardView;
 import android.media.AudioManager;
+import android.util.DisplayMetrics;
 import android.view.KeyEvent;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.inputmethod.InputConnection;
 
 import za.co.topitupkeyboard.R;
@@ -29,6 +31,22 @@ public class EDMTKeyboard extends InputMethodService implements KeyboardView.OnK
         kv.setKeyboard(keyboard);
         kv.setOnKeyboardActionListener(this);
         return kv;
+    }
+
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+//        if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
+//            // Set a reduced height for landscape mode (tablet mode)
+//            ViewGroup.LayoutParams layoutParams = kv.getLayoutParams();
+//            layoutParams.height = 1000;  // Smaller height in landscape
+//            kv.setLayoutParams(layoutParams);
+//        } else if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT) {
+//            // Set a larger height for portrait mode (phone mode)
+//            ViewGroup.LayoutParams layoutParams = kv.getLayoutParams();
+//            layoutParams.height = 500;  // Default height for portrait
+//            kv.setLayoutParams(layoutParams);
+//        }
     }
 
     @Override
