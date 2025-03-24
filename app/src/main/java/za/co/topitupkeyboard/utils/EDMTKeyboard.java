@@ -2,15 +2,22 @@ package za.co.topitupkeyboard.utils;
 
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
+import android.graphics.Color;
 import android.inputmethodservice.InputMethodService;
 import android.inputmethodservice.Keyboard;
 import android.inputmethodservice.KeyboardView;
 import android.media.AudioManager;
+import android.os.Build;
 import android.util.DisplayMetrics;
 import android.view.KeyEvent;
 import android.view.View;
-import android.view.ViewGroup;
+import android.view.WindowManager;
+import android.view.WindowMetrics;
+import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputConnection;
+import android.widget.LinearLayout;
+
+import java.util.List;
 
 import za.co.topitupkeyboard.R;
 
@@ -27,10 +34,40 @@ public class EDMTKeyboard extends InputMethodService implements KeyboardView.OnK
     @Override
     public View onCreateInputView() {
         kv = (KeyboardView)getLayoutInflater().inflate(R.layout.keyboard,null);
+        // Get the screen height based on API level
+        int screenHeight = 0;
+
+        // For API 30 and above (Android 11 or higher)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+            // Use WindowMetrics for API 30+
+            WindowMetrics windowMetrics = getSystemService(WindowManager.class).getCurrentWindowMetrics();
+            screenHeight = windowMetrics.getBounds().height();
+        } else {
+            // For devices below API 30 (older devices), use DisplayMetrics
+            DisplayMetrics metrics = new DisplayMetrics();
+
+            // Get WindowManager via getSystemService() for backward compatibility
+            WindowManager windowManager = (WindowManager) getSystemService(WINDOW_SERVICE);
+            if (windowManager != null) {
+                windowManager.getDefaultDisplay().getMetrics(metrics);
+                screenHeight = metrics.heightPixels;
+            }
+        }
+
+        // Set the keyboard height dynamically, e.g., 1/4th of the screen height
+        int keyboardHeight = screenHeight / 4;
+
+        // Set the keyboard height dynamically
+        kv.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, keyboardHeight));
         keyboard = new Keyboard(this,R.xml.numpad);
         kv.setKeyboard(keyboard);
         kv.setOnKeyboardActionListener(this);
         return kv;
+    }
+
+    @Override
+    public void onStartInputView(EditorInfo editorInfo, boolean restarting) {
+        super.onStartInputView(editorInfo, restarting);
     }
 
     @Override
@@ -77,6 +114,9 @@ public class EDMTKeyboard extends InputMethodService implements KeyboardView.OnK
                 isCaps = !isCaps;
                 keyboard.setShifted(isCaps);
                 kv.invalidateAllKeys();
+
+
+
                 break;
             case Keyboard.KEYCODE_DONE:
                 ic.sendKeyEvent(new KeyEvent(KeyEvent.ACTION_DOWN, KeyEvent.KEYCODE_ENTER));

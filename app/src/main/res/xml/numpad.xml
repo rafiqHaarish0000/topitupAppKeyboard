@@ -1,61 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
-    android:keyWidth="25%p"
-    android:horizontalGap="2px"
-    android:verticalGap="2px"
-    android:keyHeight="40dp"
     android:focusedByDefault="true"
-    >
+    android:horizontalGap="2px"
+    android:keyWidth="25%p"
+    android:keyHeight="40dp"
+    android:verticalGap="2px">
 
     <Row>
-        <Key android:keyLabel="1"
+        <Key
+            android:codes="49"
             android:keyEdgeFlags="left"
-            android:codes="49"/>
-        <Key android:keyLabel="2"
-            android:codes="50"/>
-        <Key android:keyLabel="3"
-            android:codes="51"/>
-        <Key android:keyLabel="."
+            android:keyLabel="1" />
+        <Key
+            android:codes="50"
+            android:keyLabel="2" />
+        <Key
+            android:codes="51"
+            android:keyLabel="3" />
+        <Key
+            android:codes="46"
             android:keyEdgeFlags="right"
-            android:codes="46"/>
+            android:keyLabel="." />
     </Row>
 
     <Row>
-        <Key android:keyLabel="4"
-            android:codes="52"/>
-        <Key android:keyLabel="5"
-            android:codes="53"/>
-        <Key android:keyLabel="6"
-            android:codes="54"/>
-        <Key android:keyLabel="ABC" android:codes="-2"/>
+        <Key
+            android:codes="52"
+            android:keyLabel="4" />
+        <Key
+            android:codes="53"
+            android:keyLabel="5" />
+        <Key
+            android:codes="54"
+            android:keyLabel="6" />
+        <Key
+            android:codes="-2"
+            android:keyLabel="ABC" />
     </Row>
 
     <Row>
-        <Key android:keyLabel="7"
-            android:codes="55"/>
-        <Key android:keyLabel="8"
-            android:codes="56"/>
-        <Key android:keyLabel="9"
-            android:codes="57"/>
-        <Key android:codes="-5" android:keyIcon="@drawable/sym_keyboard_delete"
-           android:keyEdgeFlags="right"
-            android:isRepeatable="true"/>
+        <Key
+            android:codes="55"
+            android:keyLabel="7" />
+        <Key
+            android:codes="56"
+            android:keyLabel="8" />
+        <Key
+            android:codes="57"
+            android:keyLabel="9" />
+        <Key
+            android:codes="-5"
+            android:isRepeatable="true"
+            android:keyBackground="@drawable/key_delete_background"
+            android:keyEdgeFlags="right" />
     </Row>
 
     <Row android:rowEdgeFlags="bottom">
-        <Key android:keyLabel="Key" android:keyIcon="@drawable/sym_keyboard_key"
-            android:keyEdgeFlags="right" android:keyWidth="25%p" android:codes="900"/>
-        <Key android:keyLabel="0" android:keyWidth="25%p"
+        <Key
+            android:codes="900"
+            android:keyWidth="25%p"
             android:keyEdgeFlags="right"
-            android:codes="48"/>
-        <Key android:keyLabel="00" android:keyWidth="25%p"
+            android:keyIcon="@drawable/sym_keyboard_key"
+            android:keyLabel="Key" />
+        <Key
+            android:codes="48"
+            android:keyWidth="25%p"
             android:keyEdgeFlags="right"
-            android:codes="800"/>
+            android:keyLabel="0" />
+        <Key
+            android:codes="800"
+            android:keyWidth="25%p"
+            android:keyEdgeFlags="right"
+            android:keyLabel="00" />
         <!--<Key android:keyLabel="DEL"
             android:isRepeatable="true" android:keyWidth="16.7%p" android:codes="-5"/>-->
 
 
-        <Key android:keyLabel="DONE" android:keyWidth="25%p" android:codes="-4"/>
+        <Key
+            android:codes="-4"
+            android:keyWidth="25%p"
+            android:keyLabel="DONE" />
     </Row>
 
 
