@@ -11,7 +11,7 @@
     <item
 
         android:state_pressed="true"
-        android:drawable="@drawable/pressed"
+        android:drawable="@drawable/deleter_pressed"
         />
 
 </selector>

@@ -149,7 +149,7 @@
             android:codes="-5"
             android:keyWidth="15%p"
             android:isRepeatable="true"
-            android:keyBackground="@drawable/key_delete_background"
+            android:keyIcon="@drawable/delete_qwetry"
             android:keyEdgeFlags="right" />
 
     </Row>
@@ -174,7 +174,7 @@
             android:codes="-4"
             android:keyWidth="25%p"
             android:keyEdgeFlags="right"
-            android:keyLabel="DONE" />
+            android:keyIcon="@drawable/done_ic" />
 
     </Row>
 

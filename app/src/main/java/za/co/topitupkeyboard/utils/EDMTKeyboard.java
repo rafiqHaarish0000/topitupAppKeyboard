@@ -2,7 +2,6 @@ package za.co.topitupkeyboard.utils;
 
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
-import android.graphics.Color;
 import android.inputmethodservice.InputMethodService;
 import android.inputmethodservice.Keyboard;
 import android.inputmethodservice.KeyboardView;
@@ -14,10 +13,9 @@ import android.view.View;
 import android.view.WindowManager;
 import android.view.WindowMetrics;
 import android.view.inputmethod.EditorInfo;
+import android.view.inputmethod.ExtractedTextRequest;
 import android.view.inputmethod.InputConnection;
 import android.widget.LinearLayout;
-
-import java.util.List;
 
 import za.co.topitupkeyboard.R;
 
@@ -140,6 +138,12 @@ public class EDMTKeyboard extends InputMethodService implements KeyboardView.OnK
                 keyboard = new Keyboard(this, R.xml.numpad);
                 kv.setKeyboard(keyboard);
                 kv.setOnKeyboardActionListener(this);
+                break;
+            case -100: // Custom KeyCode for "Clear All"
+                CharSequence currentText = ic.getExtractedText(new ExtractedTextRequest(), 0).text;
+                if (currentText != null) {
+                    ic.deleteSurroundingText(currentText.length(), 0); // Clears all text
+                }
                 break;
             default:
                 char code = (char) i;

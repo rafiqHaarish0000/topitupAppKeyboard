@@ -65,15 +65,16 @@
         <Key
             android:codes="-5"
             android:keyWidth="15%p"
-            android:keyBackground="@drawable/key_delete_background"
+            android:keyIcon="@drawable/delete_ic"
             android:keyEdgeFlags="right"
-            android:isRepeatable="true"/>
+            android:isRepeatable="false"/>
     </Row>
     
     <Row  android:rowEdgeFlags="bottom">
         <!--   <Key android:codes="-3" android:keyIcon="@drawable/sym_keyboard_done"
                 android:keyWidth="15%p" android:keyEdgeFlags="left" />-->
-        <Key android:codes="-2" android:keyLabel="ABC" android:keyWidth="25%p" />
+        <Key android:codes="-2" android:keyWidth="25%p"
+            android:keyIcon="@drawable/abc_ic"/>
         <!--
             android:codes: -101 is not a framework-defined key code but a key code that is
             privately defined in com.example.android.softkeyboard.LatinKeyboardView.
@@ -87,6 +88,6 @@
                 android:keyWidth="25%p" android:keyEdgeFlags="right"
                 />-->
 
-        <Key android:keyLabel="DONE" android:keyWidth="25%p" android:keyEdgeFlags="right" android:codes="-4"/>
+        <Key android:keyIcon="@drawable/done_ic" android:keyWidth="25%p" android:keyEdgeFlags="right" android:codes="-4"/>
     </Row>
 </Keyboard>

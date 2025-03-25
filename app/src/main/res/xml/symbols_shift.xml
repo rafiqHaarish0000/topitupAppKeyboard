@@ -126,7 +126,7 @@
             android:codes="-5"
             android:keyWidth="15%p"
             android:isRepeatable="true"
-            android:keyBackground="@drawable/key_delete_background"
+            android:keyIcon="@drawable/delete_ic"
             android:keyEdgeFlags="right" />
     </Row>
 
@@ -139,7 +139,7 @@
         <Key
             android:codes="-2"
             android:keyWidth="10%p"
-            android:keyLabel="ABC" />
+            android:keyIcon="@drawable/abc_ic"/>
         <!--
             android:codes: -101 is not a framework-defined key code but a key code that is
             privately defined in com.example.android.softkeyboard.LatinKeyboardView.

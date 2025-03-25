@@ -18,9 +18,10 @@
             android:codes="51"
             android:keyLabel="3" />
         <Key
-            android:codes="46"
+            android:codes="-5"
+            android:isRepeatable="true"
             android:keyEdgeFlags="right"
-            android:keyLabel="." />
+            android:keyIcon="@drawable/delete_ic" />
     </Row>
 
     <Row>
@@ -34,8 +35,8 @@
             android:codes="54"
             android:keyLabel="6" />
         <Key
-            android:codes="-2"
-            android:keyLabel="ABC" />
+            android:codes="-100"
+            android:keyIcon="@drawable/clear_ic" />
     </Row>
 
     <Row>
@@ -49,19 +50,15 @@
             android:codes="57"
             android:keyLabel="9" />
         <Key
-            android:codes="-5"
-            android:isRepeatable="true"
-            android:keyBackground="@drawable/key_delete_background"
-            android:keyEdgeFlags="right" />
+            android:codes="-2"
+            android:keyIcon="@drawable/abc_ic" />
     </Row>
 
     <Row android:rowEdgeFlags="bottom">
         <Key
-            android:codes="900"
-            android:keyWidth="25%p"
+            android:codes="46"
             android:keyEdgeFlags="right"
-            android:keyIcon="@drawable/sym_keyboard_key"
-            android:keyLabel="Key" />
+            android:keyLabel="." />
         <Key
             android:codes="48"
             android:keyWidth="25%p"
@@ -79,7 +76,7 @@
         <Key
             android:codes="-4"
             android:keyWidth="25%p"
-            android:keyLabel="DONE" />
+            android:keyIcon="@drawable/done_ic" />
     </Row>
 
 
