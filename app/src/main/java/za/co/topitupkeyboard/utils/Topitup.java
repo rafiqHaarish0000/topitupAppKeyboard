@@ -233,12 +233,10 @@ public class Topitup extends Application implements LifecycleObserver {  // impl
         if  (android.os.Build.MODEL.equals("SHOP1") && android.os.Build.ID.equals("N2G47H-76")) {
 
             DEVICE_TYPE = "QCOM SHOP1";
-
         }
        else if  (android.os.Build.MODEL.equals("WPOS-3") || android.os.Build.MANUFACTURER.equals("Wiseasy") || android.os.Build.MANUFACTURER.equals("wiseasy")) {
 
             DEVICE_TYPE = "WPOS";
-
             new Thread() {
                 @Override
                 public void run() {

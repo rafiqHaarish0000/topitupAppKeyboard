@@ -7,6 +7,7 @@ import android.inputmethodservice.Keyboard;
 import android.inputmethodservice.KeyboardView;
 import android.media.AudioManager;
 import android.os.Build;
+import android.service.controls.DeviceTypes;
 import android.util.DisplayMetrics;
 import android.view.KeyEvent;
 import android.view.View;

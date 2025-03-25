@@ -21,7 +21,7 @@
             android:codes="-5"
             android:isRepeatable="true"
             android:keyEdgeFlags="right"
-            android:keyIcon="@drawable/delete_nrml" />
+            android:keyIcon="@drawable/delete_ic" />
     </Row>
 
     <Row>
@@ -36,7 +36,7 @@
             android:keyLabel="6" />
         <Key
             android:codes="-100"
-            android:keyIcon="@drawable/clear_nrml" />
+            android:keyIcon="@drawable/clear_ic" />
     </Row>
 
     <Row>
@@ -51,7 +51,7 @@
             android:keyLabel="9" />
         <Key
             android:codes="-2"
-            android:keyIcon="@drawable/abc_nrml" />
+            android:keyIcon="@drawable/abc_ic" />
     </Row>
 
     <Row android:rowEdgeFlags="bottom">
@@ -76,7 +76,7 @@
         <Key
             android:codes="-4"
             android:keyWidth="25%p"
-            android:keyIcon="@drawable/done_icon" />
+            android:keyIcon="@drawable/done_ic" />
     </Row>
 
 
