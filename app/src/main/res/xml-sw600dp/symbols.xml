@@ -65,7 +65,7 @@
         <Key
             android:codes="-5"
             android:keyWidth="15%p"
-            android:keyIcon="@mipmap/deleteiconnrml"
+            android:keyIcon="@drawable/delete_sw"
             android:keyEdgeFlags="right"
             android:isRepeatable="false"/>
     </Row>

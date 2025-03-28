@@ -126,7 +126,7 @@
             android:codes="-5"
             android:keyWidth="15%p"
             android:isRepeatable="true"
-            android:keyIcon="@mipmap/deleteiconnrml"
+            android:keyIcon="@drawable/delete_ic"
             android:keyEdgeFlags="right" />
     </Row>
 

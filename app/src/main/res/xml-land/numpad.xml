@@ -21,7 +21,7 @@
             android:codes="-5"
             android:isRepeatable="true"
             android:keyEdgeFlags="right"
-            android:keyIcon="@mipmap/deleteiconnrml" />
+            android:keyIcon="@drawable/delete_ic" />
     </Row>
 
     <Row>
