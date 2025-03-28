@@ -149,7 +149,7 @@
             android:codes="-5"
             android:keyWidth="15%p"
             android:isRepeatable="true"
-            android:keyIcon="@drawable/delete_qwetry"
+            android:keyIcon="@mipmap/deleteiconnrml"
             android:keyEdgeFlags="right" />
 
     </Row>

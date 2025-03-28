@@ -7,8 +7,8 @@ import android.inputmethodservice.Keyboard;
 import android.inputmethodservice.KeyboardView;
 import android.media.AudioManager;
 import android.os.Build;
-import android.service.controls.DeviceTypes;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.WindowManager;
@@ -17,6 +17,9 @@ import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.ExtractedTextRequest;
 import android.view.inputmethod.InputConnection;
 import android.widget.LinearLayout;
+
+import java.lang.reflect.Field;
+import java.util.List;
 
 import za.co.topitupkeyboard.R;
 
@@ -59,6 +62,22 @@ public class EDMTKeyboard extends InputMethodService implements KeyboardView.OnK
         // Set the keyboard height dynamically
         kv.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, keyboardHeight));
         keyboard = new Keyboard(this,R.xml.numpad);
+//        if (keyboard != null) {
+//            List<Keyboard.Key> keys = keyboard.getKeys();
+//            for (Keyboard.Key key : keys) {
+//                if (key.codes[0] == -5) { // -5 is the delete key code
+//                    Log.e("Key", "Delete Key Found");
+//                    try {
+//                        // Use reflection to set the background resource
+//                        Field field = Keyboard.Key.class.getDeclaredField("backgroundDrawable");
+//                        field.setAccessible(true);
+//                        field.set(key, getResources().getDrawable(R.drawable.custom_delete_key, null));
+//                    } catch (Exception e) {
+//                        e.printStackTrace();
+//                    }
+//                }
+//            }
+//            }
         kv.setKeyboard(keyboard);
         kv.setOnKeyboardActionListener(this);
         return kv;
