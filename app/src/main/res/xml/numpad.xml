@@ -20,8 +20,10 @@
         <Key
             android:codes="-5"
             android:isRepeatable="true"
+            android:keyWidth="25%p"
             android:keyEdgeFlags="right"
-            android:keyIcon="@mipmap/deleteiconnrml" />
+            android:keyIcon="@mipmap/deleteiconnrml"
+            android:iconPreview="@mipmap/deleteiconnrml" />
     </Row>
 
     <Row>
@@ -36,6 +38,7 @@
             android:keyLabel="6" />
         <Key
             android:codes="-100"
+            android:keyWidth="25%p"
             android:keyIcon="@drawable/clear_nrml" />
     </Row>
 
@@ -51,6 +54,7 @@
             android:keyLabel="9" />
         <Key
             android:codes="-2"
+            android:keyWidth="25%p"
             android:keyIcon="@drawable/abc_nrml" />
     </Row>
 
@@ -69,15 +73,10 @@
             android:keyWidth="25%p"
             android:keyEdgeFlags="right"
             android:keyLabel="00" />
-        <!--<Key android:keyLabel="DEL"
-            android:isRepeatable="true" android:keyWidth="16.7%p" android:codes="-5"/>-->
-
-
         <Key
             android:codes="-4"
             android:keyWidth="25%p"
             android:keyIcon="@drawable/done_icon" />
     </Row>
-
 
 </Keyboard>
