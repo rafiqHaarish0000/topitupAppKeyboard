@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
-    android:focusedByDefault="true"
-    android:horizontalGap="2px"
     android:keyWidth="25%p"
-    android:keyHeight="40dp"
-    android:verticalGap="2px">
+    android:keyHeight="50dp"
+    android:horizontalGap="4dp"
+    android:verticalGap="4dp">
 
     <Row>
         <Key
@@ -21,7 +20,9 @@
             android:codes="-5"
             android:isRepeatable="true"
             android:keyEdgeFlags="right"
-            android:keyIcon="@drawable/delete_ic" />
+            android:keyIcon="@drawable/delete_nrml"
+            android:iconPreview="@drawable/delete_nrml"
+            android:keyWidth="25%p" />
     </Row>
 
     <Row>
@@ -36,7 +37,9 @@
             android:keyLabel="6" />
         <Key
             android:codes="-100"
-            android:keyIcon="@drawable/clear_ic"/>
+            android:keyIcon="@drawable/clear_nrml"
+            android:iconPreview="@drawable/clear_nrml"
+            android:keyWidth="25%p" />
     </Row>
 
     <Row>
@@ -51,7 +54,9 @@
             android:keyLabel="9" />
         <Key
             android:codes="-2"
-            android:keyIcon="@drawable/abc_ic" />
+            android:keyIcon="@drawable/abc_nrml"
+            android:iconPreview="@drawable/abc_nrml"
+            android:keyWidth="25%p" />
     </Row>
 
     <Row android:rowEdgeFlags="bottom">
@@ -69,15 +74,11 @@
             android:keyWidth="25%p"
             android:keyEdgeFlags="right"
             android:keyLabel="00" />
-        <!--<Key android:keyLabel="DEL"
-            android:isRepeatable="true" android:keyWidth="16.7%p" android:codes="-5"/>-->
-
-
         <Key
             android:codes="-4"
             android:keyWidth="25%p"
-            android:keyIcon="@drawable/done_ic" />
+            android:keyIcon="@drawable/done_icon"
+            android:iconPreview="@drawable/done_icon" />
     </Row>
-
 
 </Keyboard>
