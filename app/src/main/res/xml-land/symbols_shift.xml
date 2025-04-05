@@ -20,7 +20,7 @@
 <Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
     android:horizontalGap="0px"
     android:keyWidth="10%p"
-    android:keyHeight="@dimen/key_height"
+    android:keyHeight="40dp"
     android:verticalGap="0px">
 
     <Row>
@@ -126,10 +126,9 @@
             android:codes="-5"
             android:keyWidth="15%p"
             android:isRepeatable="true"
-            android:keyIcon="@drawable/delete_ic"
+            android:keyIcon="@drawable/delete_nrml"
             android:keyEdgeFlags="right" />
     </Row>
-
     <Row android:rowEdgeFlags="bottom">
         <Key
             android:codes="-3"
