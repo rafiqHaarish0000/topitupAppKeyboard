@@ -88,6 +88,6 @@
                 android:keyWidth="25%p" android:keyEdgeFlags="right"
                 />-->
 
-        <Key android:keyIcon="@drawable/done_ic" android:keyWidth="25%p" android:keyEdgeFlags="right" android:codes="-4"/>
+        <Key android:keyIcon="@drawable/done_icon" android:keyWidth="25%p" android:keyEdgeFlags="right" android:codes="-4"/>
     </Row>
 </Keyboard>

@@ -126,7 +126,7 @@
             android:codes="-5"
             android:keyWidth="15%p"
             android:isRepeatable="true"
-            android:keyIcon="@drawable/delete_nrml"
+            android:keyIcon="@drawable/delete_qwetry"
             android:keyEdgeFlags="right" />
     </Row>
     <Row android:rowEdgeFlags="bottom">
