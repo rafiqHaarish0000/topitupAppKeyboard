@@ -52,8 +52,9 @@
     </Row>
     <!--  android:keyIcon="@drawable/sym_keyboard_shift"-->
     <Row>
-        <Key android:codes="-1"
+        <Key android:codes="95"
                 android:keyWidth="15%p" android:isModifier="true"
+                android:keyLabel="_"
                 android:isSticky="true" android:keyEdgeFlags="left"/>
         <Key android:codes="33" android:keyLabel="!" />
         <Key android:codes="34" android:keyLabel="&quot;"/>
